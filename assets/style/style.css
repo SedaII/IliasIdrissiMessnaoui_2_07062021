@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+  --color-blue: #0065FC;
+  --color-light-blue: #DEEBFF;
+  --color-grey: #F2F2F2;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+}
+img {
+  width: 100px;
+}
+
+i {
+  color: var(--color-blue);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 3px;
+}
+
+.side-card {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 3px;
+}
+
+/* Global class */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.background {
+  background-color: var(--color-grey);
+  padding: 0 2em;
+}
