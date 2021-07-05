@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
 
 :root {
   --color-blue: #0065FC;
@@ -17,8 +17,13 @@ h1, h2 {
   font-weight: bold;
 }
 
+h2 {
+  margin: 0 0 .8em 0;
+}
+
 h3 {
-  font-size: 0.9rem;
+  font-size: .9em;
+  margin: .4em 0;
 }
 
 img {
@@ -35,10 +40,15 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 a:visited {
   color: inherit;
+}
+
+p {
+  font-size: .8em;
 }
 
 /* Nav elements*/
@@ -156,18 +166,6 @@ a:visited {
   border-radius: 50px;
 }
 
-.card {
-  background-color: #fff;
-  border-radius: 30px;
-  padding: 3px;
-}
-
-.side-card {
-  background-color: #fff;
-  border-radius: 30px;
-  padding: 3px;
-}
-
 /* Hébergement */
 
 /* Cards */
@@ -179,9 +177,12 @@ a:visited {
 
 .card {
   overflow: hidden;
-  max-width: 200px;
+  width: 220px;
   padding: 6px;
-
+  height: 150px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 3px;
 }
 
 .card img {
@@ -198,22 +199,57 @@ a:visited {
 }
 
 /* Side cards */
+.side-header {
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.side-header i {
+  font-size: 1.3em;
+  color: black;
+}
+
 .side-card-container {
   display: grid;
   grid-template-rows: 1fr;
+  row-gap: 2em;
 }
 
 .side-card {
-  height: 200px;
+  width: 300px;
+  height: 110px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 3px;
 }
 
 .side-card-content {
-  
+  height: 100%;
+  align-items: start;
+  justify-content: space-between;
+  margin: 0 12px;
+  box-sizing: border-box;
+}
+
+.side-card a {
+  height: 100%;
+}
+
+.side-card-content p {
+  margin: 0;
 }
 
 .side-card img{
-  width: 200px;
+  width: 37%;
   object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 12px 0 0 12px;
+}
+
+.star-container {
+  font-size: .7em;
+  padding-bottom: 9px;
 }
 
 /* Global class */
@@ -229,7 +265,7 @@ a:visited {
 
 .background {
   background-color: var(--color-grey);
-  padding: 0 2em;
+  padding: 2em;
   border-radius: 21px;
   margin-right: 1.5rem;
 }
