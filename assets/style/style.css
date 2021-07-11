@@ -186,7 +186,7 @@ p {
 }
 
 .card img {
-  height: 60%;
+  height: 100px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
@@ -256,7 +256,7 @@ p {
 }
 
 .side-card img{
-  width: 37%;
+  width: 110px;
   object-fit: cover;
   object-position: 50% 50%;
   border-radius: 12px 0 0 12px;
@@ -265,6 +265,39 @@ p {
 .star-container {
   font-size: .7em;
   padding-bottom: 9px;
+}
+
+/* Activity cards */
+
+.activity-card-container {
+  height: 500px;
+  flex-wrap: wrap;
+}
+.activity-card-large {
+  width: 400px;
+  height: 500px;
+}
+.activity-card-large a {
+  width: inherit;
+  height: inherit;
+}
+.activity-card-large img{
+  width: inherit;
+  height: 460px;
+  object-fit: cover;
+}
+.activity-card-small {
+  width: 400px;
+  height: 250px;
+}
+.activity-card-small a {
+  width: inherit;
+  height: inherit;
+}
+.activity-card-small img {
+  width: inherit;
+  height: 210px;
+  object-fit: cover;
 }
 
 /* Global class */
