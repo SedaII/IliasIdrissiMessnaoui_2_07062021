@@ -14,20 +14,34 @@
 
 <body>
   
-  <header class="column">
-    <nav class="Nav row">
-      <img src="assets/images/logo/reservia-nav.png" alt="reservia">
-      <ul class="Nav__list row">
-        <li class="Nav__list-item">
-          <a class="Nav__link" href="#hebergement">Hébergements</a>
-        </li>
-        <li class="Nav__list-item">
-          <a class="Nav__link" href="#activites">Activités</a>
-        </li>
-        <li class="Nav__list-item">
-          <a class="Nav__login Nav__link" href="#">S'inscrire</a>
-        </li>
-      </ul>
+  <header>
+    <nav class="Nav column">
+      <div class="Nav__header row">
+        <img src="assets/images/logo/reservia-nav.png" alt="reservia">
+        <ul class="Nav__list row">
+          <div class="desktop-nav row">
+            <li class="Nav__list-item">
+              <a class="Nav__link" href="#hebergement">Hébergements</a>
+            </li>
+            <li class="Nav__list-item">
+              <a class="Nav__link" href="#activites">Activités</a>
+            </li>
+          </div>
+          <li class="Nav__list-item">
+            <a class="Nav__login Nav__link" href="#">S'inscrire</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-nav">
+        <ul class="Nav__list row">
+            <li class="Nav__list-item">
+              <a class="Nav__link" href="#hebergement">Hébergements</a>
+            </li>
+            <li class="Nav__list-item">
+              <a class="Nav__link" href="#activites">Activités</a>
+            </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -44,20 +58,28 @@
   
     <div class="Filter row">
       <h3>Filtres</h3>
-      <div class="Filter__item">
-        <i class="Filter__icon fas fa-money-bill-wave"></i>
+      <div class="Filter__item row">
+        <div class="Filter__icon-container">
+          <i class="Filter__icon fas fa-money-bill-wave"></i>
+        </div>
         Économique
       </div>
-      <div class="Filter__item">
-        <i class="Filter__icon fas fa-child"></i>
+      <div class="Filter__item row">
+        <div class="Filter__icon-container">
+          <i class="Filter__icon fas fa-child"></i>
+        </div>
         Familial
       </div>
-      <div class="Filter__item">
-        <i class="Filter__icon fas fa-heart"></i>
+      <div class="Filter__item row">
+        <div class="Filter__icon-container">
+          <i class="Filter__icon fas fa-heart"></i>
+        </div>
         Romantique
       </div>
-      <div class="Filter__item">
-        <i class="Filter__icon fas fa-dog"></i>
+      <div class="Filter__item row">
+        <div class="Filter__icon-container">
+          <i class="Filter__icon fas fa-dog"></i>
+        </div>
         Animaux autorisés
       </div>
     </div>
@@ -192,8 +214,8 @@
         </header>
 
         <div class="side-card-container">
-          <article class="side-card">
-            <a href="#" class="row">
+          <article>
+            <a href="#" class="side-card row">
               <img src="assets/images/hebergements/small/matin.jpg" alt="Hôtel le soleil du matin">
               <div class="side-card-content column">
                 <div class="column">
@@ -211,8 +233,8 @@
             </a>
           </article>
           
-          <article class="side-card">
-            <a href="#" class="row">
+          <article>
+            <a href="#" class="side-card row">
               <img src="assets/images/hebergements/small/hotes.jpg" alt="Au coeur de l'eau chambres d'hôtes">
               <div class="side-card-content column">
                 <div class="column">
@@ -230,8 +252,8 @@
             </a>
           </article>
 
-          <article class="side-card">
-            <a href="#" class="row">
+          <article>
+            <a href="#" class="side-card row">
               <img src="assets/images/hebergements/small/blanc.jpg" alt="Hôtel tout bleu et blanc">
               <div class="side-card-content column">
                 <div class="column">
@@ -255,53 +277,80 @@
     <section id="activites">
       <h2>Activités à Marseille</h2>
       <div class="activity-card-container column">
-          <article class="activity-card-large">
-            <a href="#">
+          <article>
+            <a href="#" class="activity-card large">
               <img src="assets/images/activites/small/port.jpg" alt="Vieux port">
               <h3>Vieux Port</h3>
             </a>
           </article>
-  
-          <article class="activity-card-small">
-            <a href="#">
-              <img src="assets/images/activites/small/pomegues.jpg" alt="Fort de Pomègues">
-              <h3>Fort de Pomègues</h3>
+
+          <div class="column-stretch">
+            <article>
+              <a href="#" class="activity-card small">
+                <img src="assets/images/activites/small/pomegues.jpg" alt="Fort de Pomègues">
+                <h3>Fort de Pomègues</h3>
+              </a>
+            </article>
+            
+            <article>
+              <a href="#" class="activity-card small">
+                <img src="assets/images/activites/small/frioul.jpg" alt="Îles du Frioul">
+                <h3>Îles du Frioul</h3>
+              </a>
+            </article>
+          </div>
+          
+          
+          <article>
+            <a href="#" class="activity-card large">
+              <img src="assets/images/activites/small/parc.jpg" alt="Parc National des Calanques">
+              <h3>Parc National des Calanques</h3>
             </a>
           </article>
-  
-          <article class="activity-card-small">
-            <a href="#">
-              <img src="assets/images/activites/small/frioul.jpg" alt="Îles du Frioul">
-              <h3>Îles du Frioul</h3>
-            </a>
-          </article>
-      </div>
+
+          <div class="column-stretch">
+            <article>
+              <a href="#" class="activity-card small">
+                <img src="assets/images/activites/small/notre.jpg" alt="Notre-Dame-de-la-Garde">
+                <h3>Notre-Dame-de-la-Garde</h3>
+              </a>
+            </article>
+            
+            <article>
+              <a href="#" class="activity-card small">
+                <img src="assets/images/activites/small/longchamp.jpg" alt="Parc Longchamp">
+                <h3>Parc Longchamp</h3>
+              </a>
+            </article>
+          </div>
+
+        </div>
     </section>
   </main>
 
-  <footer class="background row">
+  <footer class="footer">
     <div class="column">
       <h3>À propos</h3>
       <ul>
-        <li>Fonctionnement du site</li>
-        <li>Conditions générales de vente</li>
-        <li>Données et confidentialité</li>
+        <li><a href="#">Fonctionnement du site</a></li>
+        <li><a href="#">Conditions générales de vente</a></li>
+        <li><a href="#">Données et confidentialité</a></li>
       </ul>
     </div>
 
     <div class="column">
       <h3>Nos hébergements</h3>
       <ul>
-        <li>Charte qualité</li>
-        <li>Soumettre votre hôtel</li>
+        <li><a href="#">Charte qualité</a></li>
+        <li><a href="#">Soumettre votre hôtel</a></li>
       </ul>
     </div>
 
     <div class="column">
       <h3>Assistance</h3>
       <ul>
-        <li>Centre d'aide</li>
-        <li>Nous contacter</li>
+        <li><a href="#">Centre d'aide</a></li>
+        <li><a href="#">Nous contacter</a></li>
       </ul>
     </div>
   </footer>
